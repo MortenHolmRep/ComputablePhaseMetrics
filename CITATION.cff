@@ -1,0 +1,19 @@
+# https://citation-file-format.github.io/
+cff-version: 1.2.0
+message: "Please cite this software using the information provided below if you use it in your research or work."
+authors:
+  - family-names: Andersen
+    given-names: Benjamin H.
+    orcid: https://orcid.org/0000-0001-6579-4823
+  - family-names: Holm
+    given-names: Morten
+    orcid: https://orcid.org/0000-0003-1383-2810
+  - family-names: Andersen
+    given-names: Simon G.
+    orcid: https://orcid.org/0009-0005-8725-5691
+  - family-names: Doostmahammadi
+    given-names: Amin
+    orcid: https://orcid.org/0000-0002-1116-4268
+title: "Computable Phase Metrics"
+version: 0.1.0
+date-released: 2025-04-21
