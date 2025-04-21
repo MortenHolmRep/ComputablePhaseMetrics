@@ -2,7 +2,7 @@
 
 ## Description
 This module provides functionality to compute Computable Information Densities (CID), 
-a universal indicator metric for identifying phase transitions in complex systems out of equilibrium. 
+a proposed universal indicator metric for identifying phase transitions in complex systems out of equilibrium. 
 CID is a measure derived from algorithmic information theory and is used to analyze 
 the structural and dynamical properties of systems undergoing phase transitions. 
 
