@@ -1,6 +1,6 @@
 import re
 
-from setuptools import find_packages, setup
+from setuptools import Extension, find_packages, setup
 
 # Read the contents of README file
 with open("README.md", encoding="utf-8") as f:
@@ -15,9 +15,17 @@ if match:
     # Extract the description text
     description = match.group(1).strip()
 
-# Read the requirements file
+# Read the requirements file for the setup dependencies
 with open("requirements.txt") as f:
     requirements = f.read().splitlines()
+
+# Define the C extension module
+LempelZivModule_extension = Extension(
+    "ComputablePhaseMetrics.ComputableInformationDensity.lempel_ziv_complexity.LempelZivModule",
+    sources=[
+        "src/ComputablePhaseMetrics/ComputableInformationDensity/lempel_ziv_complexity/LempelZivModule.c"
+    ],
+)
 
 setup(
     name="ComputablePhaseMetrics",
@@ -52,6 +60,7 @@ setup(
             "plotly",
         ],
     },
+    ext_modules=[LempelZivModule_extension],
     project_urls={
         "Bug Reports": "https://github.com/mortenholmrepo/ComputablePhaseMetrics/issues",
         "Source": "https://github.com/mortenholmrepo/ComputablePhaseMetrics",

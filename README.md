@@ -20,6 +20,9 @@ pip install -e .[dev]
 
 Make sure you have `pip` installed and are in the root directory of the project before running the command.
 
+### Building the C Extension
+The package includes a C extension module (`LempelZivModule`) for improved performance. The installation process will automatically build this module.
+
 ## Contributing
 
 We welcome contributions to improve this project! Please follow these guidelines to ensure a smooth contribution process.
