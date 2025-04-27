@@ -26,6 +26,9 @@ def cid(sequence):
     Args: one-dimensional data array.
     Returns: CID measure of the sequence.
     """
+    if isinstance(sequence, np.ndarray):
+        sequence = "".join(map(str, sequence))
+
     C, L = lz77(sequence), len(sequence)
     return C * (log2(C) + 2 * log2(L / C)) / L
 
